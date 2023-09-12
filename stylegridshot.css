@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(51, 47, 47);
+  height: 100vh;
+}
+
+.crosshair {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0px;
+  row-gap: 0px;
+  place-items: center;
+}
+.left {
+  width: 4px;
+  height: 2px;
+  background-color: azure;
+}
+.right {
+  width: 4px;
+  height: 2px;
+  background-color: azure;
+}
+.top {
+  width: 2px;
+  height: 4px;
+  background-color: azure;
+}
+.bottom {
+  width: 2px;
+  height: 4px;
+  background-color: azure;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4px;
+  width: 4px;
+}
+.pos {
+  position: absolute;
+  top: calc(50vh - 38px);
+  left: calc(50vw - 85px);
+}
+.fullscreen {
+  height: 1.5vw;
+  width: 1.5vw;
+}
+
+#canvas1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px white;
+}
+#gun {
+  display: none;
+}
+#BackGround{
+  display: none;
+}
+#score-timer{
+  display: none;
+}
+
+div.button{
+  padding-bottom: 0;
+  width: 170px;
+  height: 75px;
+  background-color : rgb(108, 108, 226);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.button:hover {
+  transition: 300ms;
+  color: white;
+  background-color : rgb(37, 37, 95);
+}
+
+div.iner{
+  padding-bottom: 0;
+  width: 160px;
+  height: 65px;
+  background-color : rgb(37, 37, 95);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.iner:hover {
+  transition: 300ms;
+  background-color : rgb(108, 108, 226);
+}
+
+div.iner2{
+  padding-bottom: 0;
+  width: 145px;
+  height: 55px;
+  background-color : rgb(108, 108, 226);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+div.iner2:hover{
+  transition: 300ms;
+  background-color : rgb(37, 37, 95);
+}
+
+.hide{
+  display: none;
+}

@@ -1,0 +1,78 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ACC</title>
+
+        <link rel="stylesheet" href="css\style.css" />
+        <link rel="stylesheet" href="css\profile.css">
+
+    </head>
+    <style>
+        body
+    {
+        height:300px;
+        width:300px;
+    
+        background: linear-gradient(130deg, #4400ff, #a78af5, #011938);
+        background-size: 200% 200%;
+    
+        -webkit-animation: Animation 5s ease infinite;
+        -moz-animation: Animation 5s ease infinite;
+        animation: Animation 5s ease infinite;
+    }
+    
+    @-webkit-keyframes Animation {
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
+    }
+    @-moz-keyframes Animation {
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
+    }
+    @keyframes Animation { 
+        0%{background-position:10% 0%}
+        50%{background-position:91% 100%}
+        100%{background-position:10% 0%}
+    }
+    </style>
+        
+    <body>
+
+        <section class="sin" style="background-image: url(img/mw2-beta-hero.jpg);">
+            <div class="container" style="background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+            linear-gradient(90deg, transparent 0%, #c50707 100%);
+border-radius: 8px;
+padding: 9px;
+box-sizing: border-box;">
+                <div class="logo">
+                    <h1 > SIGN IN!!</h1>
+                </div>
+                <form action="scoreboard.html" onsubmit="return save()">
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="password" id="password" placeholder="Password">
+                        <button type="submit">Sign In</button>
+                </form>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="sign-up">
+                    <span>New User? </span>
+                    <a href="signup.html">Sign Up Now!</a>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+</html>
+

@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    /* overflow: hidden; */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.84077771939043610682773532971623353660106658935546875vw;
+    background-color: rgb(51, 47, 47);
+    height: 100vh;
+    background-image: url(shooting.png);
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(10, 20, 30);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25em;
+  }
+  
+  header img {
+    height: 5em;
+    width: 6.66em;
+    padding-right: 1em;
+  }
+  
+  header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  nav a {
+    text-decoration-line: none;
+    color: white;
+  }
+  nav h3 :hover {
+    color: rgb(255, 81, 82);
+    font-size: larger;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  nav li {
+    padding-left: 2.5em;
+  }
+  
+  footer {
+    display: flex;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #304146;
+    color: white;
+  }
+  
+  footer h4 {
+    margin: 0;
+    font-weight: lighter;
+  }
+
+  main{
+    width: 100%;
+    height : 84.5vh;
+ }
+
+ .scoretop {
+  position: absolute;
+  top: 16vh;
+  left: 25vw;
+  background-color : rgb(37, 37, 95);
+  color: white;
+  font-weight: bolder;
+  font-size: 4vh;
+  width: 50vw;
+  height: 6vh;
+  text-align: center;
+  border: black;
+  border-style: solid;
+  border-width: 0.25vw;
+}
+
+.scoremain{
+  position: absolute;
+  top: 21.5vh;
+  left: 25vw;
+  background-color : rgb(108, 108, 226);
+  width: 50vw;
+  height: 73vh;
+  border: black ;
+  border-style: solid;
+  border-width: 0.25vw;
+  opacity: 0.5;
+}
+
+div.scoremain div.line{
+  color: white;
+  font-size: 5vh;
+  height: 7.3vh;
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: white;
+  border-bottom-width: 1px;
+  border-style: solid;
+}
+
+div.scoremain div.last{
+  color: white;
+  font-size: 5vh;
+  height: 7.3vh;
+  width: 100%;
+border : 0
+}
+
+#canvas1 {
+  position: absolute;
+  top: 21.5vh;
+  left: 25vw;
+  border: black ;
+  border-style: solid;
+  border-width: 0.25vw;
+}

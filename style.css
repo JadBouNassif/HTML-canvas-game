@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    margin:0;
+    font-size: 0.84077771939043610682773532971623353660106658935546875vw;
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(10, 20, 30);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25em;
+  }
+  
+  header img {
+    height: 5em;
+    width: 6.66em;
+    padding-right: 1em;
+  }
+  
+  header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  section.about div {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(24, 30, 39);
+    line-height: 3.125em;
+    text-align: center;
+  }
+  section.about div h3{
+    margin-bottom: 0;
+  }
+
+  section.about h1 {
+    font-size: 2.627430373095112958736763175693340599536895751953125vw;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 0.4em;
+    text-align: center;
+    color: white;
+    background-color: rgb(24, 30, 39);
+    text-decoration: underline rgb(255, 81, 82);
+  }
+  
+  nav a {
+    text-decoration-line: none;
+    color: white;
+  }
+  nav h3 :hover {
+    color: rgb(255, 81, 82);
+    font-size: larger;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  nav li {
+    padding-left: 2.5em;
+  }
+  
+  footer {
+    display: flex;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #304146;
+    color: white;
+  }
+  
+  footer h4 {
+    margin: 0;
+    font-weight: lighter;
+  }
+  
+  .about {
+    padding-top: 7.4em;
+    margin-top: -7.4em;
+  }
+
+  section.about div.selection
+{
+    height: 65vh;
+    width: 50vw;
+    display : flex ;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+section.about div.button{
+    padding-bottom: 0;
+    width: 8.85vw;
+    height: 3.9vw;
+    background-color : rgb(108, 108, 226);
+    border-radius: 1.5625vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about div.button:hover {
+  transition: 300ms;
+  color: white;
+  background-color : rgb(37, 37, 95);
+}
+
+section.about div.iner{
+    padding-bottom: 0;
+    width: 8.33vw;
+    height: 3.385vw;
+    background-color : rgb(37, 37, 95);
+    border-radius: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.about div.iner:hover {
+  transition: 300ms;
+  background-color : rgb(108, 108, 226);
+}
+
+
+section.about div.iner2{
+    padding-bottom: 0;
+    width: 7.552vw;
+    height: 2.8645vw;
+    background-color : rgb(108, 108, 226);
+    border-radius: 1.041vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.041vw;
+    font-weight: bolder;
+}
+
+section.about div.iner2:hover{
+  transition: 300ms;
+  background-color : rgb(37, 37, 95);
+}
+
+.news-section {
+  background-image: url(./newsbackground.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height : 50vh;
+}
+
+.news-card {
+  background-color: #f5f5f5;
+  padding: 1.04167vw;
+  border: 0.05208vw solid #ddd;
+  border-radius: 1.04167vw; 
+  text-align: center;
+  width: 20.83333vw; 
+}
+
+.news-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.26042vw; 
+}
+
+.news-card h2 {
+  margin-top: 0.52083vw; 
+  font-size: 1.25vw;
+}
+
+.news-card p {
+  margin-top: 0.52083vw; 
+  font-size: 0.83333vw; 
+}
+
+.news-card img {
+  width: 100%; 
+  height: 10.41667vw; 
+  border-radius: 0.26042vw;
+}

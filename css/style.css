@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 21, 21);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    background-color: rgb(17, 100, 0);
+    /* for others browsers*/
+    background-image: linear-gradient(to right,
+            rgb(104, 243, 24),
+            rgb(31, 95, 2));
+    border-bottom: 2px solid darkgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img-logo {
+    position: relative;
+    left: 80px;
+}
+
+.title-logo {
+    position: relative;
+    left: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(22, 21, 21);
+}
+
+nav {
+    display: flex;
+    font-size: x-large;
+    position: relative;
+    top: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(22, 21, 21);
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    color: darkgrey;
+}
+
+#wlc {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    height: 80%;
+    /*500px*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid darkgray;
+}
+
+.move-right {
+    animation-name: movertl;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes movertl {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(130%);
+    }
+}
+
+main button:hover {
+    transform: scale(1.1);
+    background-color: rgb(180, 180, 180);
+    color: rgb(228, 16, 16);
+}
+
+#main-h2 {
+    color: beige;
+}
+
+main button {
+    padding: 10px 20px;
+    color: rgb(22, 21, 21);
+    background-color: rgb(104, 243, 24);
+    border-radius: 8px;
+    font-weight: bold;
+    border: non;
+    position: relative;
+    left: 140px;
+}
+
+#abus {
+    height: 500px;
+}
+
+.move-left {
+    height: 25%;
+    width: 15%;
+    animation-name: moveltr;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    color: aliceblue;
+    position: relative;
+    bottom: 50px;
+}
+
+@keyframes moveltr {
+    from {
+        transform: translateX(500%);
+    }
+
+    to {
+        transform: translateX(350%);
+    }
+}
+
+.move-right img {
+    position: relative;
+    left: 35px;
+}
+
+.abtus {
+    padding-top: 20px;
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(14, 194, 14);
+}
+
+.abtus hr {
+    color: azure;
+    width: 30%;
+}
+
+.abtus a {
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: antiquewhite;
+    border-bottom: 1px solid red;
+}
+
+.charac h2 {
+    text-transform: uppercase;
+}
+
+.charac {
+    display: flex;
+    font-size: x-large;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(14, 194, 14);
+}
+
+.charac a {
+    font-size: x-large;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+
+.chardivs{
+    display: flex;
+}
+
+.char-imgs{
+    z-index: 0;
+    width: 200px;
+    height: 450px;
+}
+
+.img-name{
+    text-transform: uppercase;
+    max-width: 150px;
+    z-index: 1;
+    color: #ffffffff;
+    font-family: stratum2bold, sans-serif;
+    position: relative;
+    bottom: 120px;
+    left: 10px;
+    font-weight: bolder;
+}
+
+.char-imgs img:hover {
+    transform: scale(1.1);
+}
